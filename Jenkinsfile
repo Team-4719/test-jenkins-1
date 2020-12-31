@@ -4,7 +4,7 @@ pipeline {
  stages {
         stage('Checkout-git'){
                steps{
-		git poll: true, url: 'git@github.com:videocursoscloud/test-jenkins-1.git'
+		sh:"git clone https://github.com/Team-4719/test-jenkins-1.git"
                }
         }
         stage('CreateVirtualEnv') {
